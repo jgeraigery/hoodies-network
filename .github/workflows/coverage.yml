@@ -24,7 +24,7 @@ jobs:
           script: ./gradlew jacocoTestReport
 
       - name: Upload Report
-        uses: 'actions/upload-artifact@v2'
+        uses: 'actions/upload-artifact@v7'
         with:
           name: report.xml
           path: ${{ github.workspace }}/Hoodies-Network/build/reports/coverage/androidTest/debug/report.xml
